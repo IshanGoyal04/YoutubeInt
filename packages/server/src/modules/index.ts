@@ -4,7 +4,7 @@ import { authModule } from './auth_module';
 import { userModule } from './user_module';
 import { roleModule } from './role_module';
 import { imageModule } from './image_module';
-
+import { searchModule } from './search_module';
 import { loggingModule } from 'logger';
 
 import { mailerModule } from 'mailer';
@@ -32,6 +32,7 @@ mainContainer.load(authStrategyModule);
 mainContainer.load(roleModule);
 mainContainer.load(imageModule);
 mainContainer.load(mailerModule);
+mainContainer.load(searchModule);
 
 mainContainer
   .bind<PermissionMiddleware>('PermissionMiddleware')
